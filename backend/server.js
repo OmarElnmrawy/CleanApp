@@ -36,7 +36,7 @@ app.use('/api/game', gameRoutes);
 //  DATABASE & START
 connectDB(); 
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server Started at port ${PORT}`);
     console.log(`Static files served from: ${path.join(__dirname, 'uploads')}`);
 });
